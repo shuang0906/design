@@ -1,3 +1,4 @@
+//code from https://www.youtube.com/watch?v=gpTjJk-pt6s&t=141s
 import {OrbitControls} from 'https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js'
 import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js';
 const canvas = document.querySelector('canvas.webgl')
@@ -12,7 +13,7 @@ const textureLoader = new THREE.TextureLoader()
 const geometry = new THREE.BoxGeometry(1,1,1)
 const geometry2 = new THREE.DodecahedronGeometry(0.5,3)
 const material = new THREE.MeshPhongMaterial({
-    color: 0xFF0000,    // red (can also use a CSS color string here)
+    color: 0xFF0000,    
     flatShading: true,
     transparent: true,
     opacity : 0.5

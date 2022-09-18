@@ -64,7 +64,7 @@ nav label div {
   user-select: none;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: rgba(76, 71, 178, 1);
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
 
 }
@@ -72,11 +72,9 @@ nav label div {
 @media (hover: hover) {
 
   nav label:hover div {
-
     width: 20px;
     height: 20px;
     margin: 14px;
-
   }
 
 }
@@ -118,9 +116,10 @@ nav label div {
 }
 
 .menu-container {
-
-  display: block;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   width: 100%;
   height: 100vh;
   margin-left: auto;
@@ -162,13 +161,12 @@ nav label div {
   margin: 0.33em auto 0.33em auto;
   padding-top: 1em;
   padding-bottom: 1em;
-  color: #444;
+  color: rgb(100, 100, 100);
   font-weight: 600;
   font-size: 0.9rem;
   line-height: 1.4em;
   cursor: pointer;
   overflow: hidden;
-  border-radius: 1em;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -185,9 +183,8 @@ nav label div {
 
 .menu-container a:hover {
 
-  color: rgba(76, 71, 178, 1);
+  color: black;
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 1);
 
 }
 
