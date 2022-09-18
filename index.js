@@ -6,22 +6,26 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
 const textureLoader = new THREE.TextureLoader()
-const myTexture = textureLoader.load('coolTex.jpg')
+//const myTexture = textureLoader.load('coolTex.jpg')
 
 // Object
 const geometry = new THREE.BoxGeometry(1,1,1)
 const geometry2 = new THREE.DodecahedronGeometry(0.5,3)
-const material = new THREE.MeshBasicMaterial({
-    map: myTexture
-})
+const material = new THREE.MeshPhongMaterial({
+    color: 0xFF0000,    // red (can also use a CSS color string here)
+    flatShading: true,
+    transparent: true,
+    opacity : 0.5
+  });
+//const material = new THREE.MeshBasicMaterial({map: myTexture})
 const boxMesh = new THREE.Mesh(geometry,material)
 const sphereMesh = new THREE.Mesh(geometry2,material)
 scene.add(boxMesh)
 // scene.add(sphereMesh)
 boxMesh.position.x = 0
-boxMesh.position.y = 0.8
-sphereMesh.position.x = -1.6
-sphereMesh.position.y = 0.5
+boxMesh.position.y = 0
+sphereMesh.position.x = 1
+sphereMesh.position.y = 1
 geometry.center()
 // Sizes
 const sizes = {
