@@ -3,7 +3,6 @@ nav input[type=checkbox] {
   display: none;
   cursor: pointer;
   -webkit-touch-callout: none;
-
 }
 
 nav .toggle {
@@ -46,7 +45,7 @@ nav label {
 
   nav label {
 
-    margin: 0;
+    /*margin: 0;*/
 
   }
 
