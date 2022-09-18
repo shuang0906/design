@@ -36,6 +36,14 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+#intro_text{
+  font-size: 1.9em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.8);
+  margin:12px;
+}
+
 h1 {
   font-size: 1.9em;
   font-weight: 300;
